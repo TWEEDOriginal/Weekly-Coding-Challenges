@@ -1,0 +1,15 @@
+{
+  "name": "weekly-coding-challenges",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "ccwc": "ccwc/ccwc.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
