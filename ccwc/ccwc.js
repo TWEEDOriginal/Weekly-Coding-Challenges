@@ -1,6 +1,7 @@
 #! /usr/bin/env node
 const readline = require("readline");
 const fs = require("fs");
+const { getFileContent } = require("./utils");
 
 const countBytes = async ({ file }) => {
   if (!file) {
@@ -31,33 +32,19 @@ const countLinesAsync = (file) => {
   });
 };
 
-async function readStdIn(stream) {
-  const chunks = [];
-  for await (const chunk of stream) chunks.push(chunk);
-  return Buffer.concat(chunks).toString("utf8");
-}
-
 async function getFileContentAndByteSize(stream) {
-  const chunks = [];
+  let fileContent = "";
   let fileSizeInBytes = 0;
   for await (const chunk of stream) {
-    chunks.push(chunk);
     fileSizeInBytes += chunk.length;
+    fileContent += chunk.toString("utf8");
   }
-  return [Buffer.concat(chunks).toString("utf8"), fileSizeInBytes];
+  return [fileContent, fileSizeInBytes];
 }
-
-const getFileContent = async (file) => {
-  if (file) {
-    return fs.readFileSync(file, "utf-8");
-  } else {
-    return await readStdIn(process.stdin);
-  }
-};
 
 const countLines = async ({ file, fileContent }) => {
   if (!fileContent) {
-    fileContent = await getFileContent(file);
+    fileContent = await getFileContent(file, "utf-8");
   }
   let count = 0;
 
@@ -73,7 +60,7 @@ const countLines = async ({ file, fileContent }) => {
 
 const countWords = async ({ file, fileContent }) => {
   if (!fileContent) {
-    fileContent = await getFileContent(file);
+    fileContent = await getFileContent(file, "utf-8");
   }
   let count = 0;
   let word = "";
@@ -96,7 +83,7 @@ const countWords = async ({ file, fileContent }) => {
 
 const countCharacters = async ({ file, fileContent }) => {
   if (!fileContent) {
-    fileContent = await getFileContent(file);
+    fileContent = await getFileContent(file, "utf-8");
   }
 
   return fileContent.length;
@@ -164,6 +151,8 @@ async function main() {
   }
 }
 
-main()
-  .then()
-  .catch((e) => console.error("No such file or invalid option"));
+if (require.main === module) {
+  main()
+    .then()
+    .catch((e) => console.error("No such file or invalid option"));
+}
