@@ -9,7 +9,8 @@
   "bin": {
     "ccwc": "ccwc/ccwc.js",
     "ccencode": "compression_tool/ccencode.js",
-    "ccdecode": "compression_tool/ccdecode.js"
+    "ccdecode": "compression_tool/ccdecode.js",
+    "cccut": "cut_tool/cut.js"
   },
   "keywords": [],
   "author": "",

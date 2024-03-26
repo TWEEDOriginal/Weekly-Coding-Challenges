@@ -1,5 +1,4 @@
 #! /usr/bin/env node
-const readline = require("readline");
 const fs = require("fs");
 const { getFileContent } = require("./utils");
 
@@ -15,21 +14,6 @@ const countBytes = async ({ file }) => {
   const stats = fs.statSync(file);
   const fileSizeInBytes = stats.size;
   return fileSizeInBytes;
-};
-
-const countLinesAsync = (file) => {
-  let linesCount = 0;
-  const rl = readline.createInterface({
-    input: fs.createReadStream(file),
-    output: process.stdout,
-    terminal: false,
-  });
-  rl.on("line", function (line) {
-    linesCount++; // on each linebreak, add +1 to 'linesCount'
-  });
-  rl.on("close", function () {
-    console.log(`${linesCount} ${file}`); // print the result when the 'close' event is called
-  });
 };
 
 async function getFileContentAndByteSize(stream) {
