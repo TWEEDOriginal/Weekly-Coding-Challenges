@@ -9,3 +9,4 @@ This repository contains JavaScript attempts on [Weekly Coding Challenges](https
 1. [Build your own wc tool](ccwc)
 2. [Build your own JSON parser](json_parser)
 3. [Build your own compression tool](compression_tool)
+4. [Build your own cut tool](cut_tool)
