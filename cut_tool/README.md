@@ -1,4 +1,4 @@
-# 1. Build Your Own wc Tool:
+# 1. Build Your Own cut Tool:
 
 ## Description
 
