@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repository contains JavaScript attempts on [Weekly Coding Challenges](https://codingchallenges.fyi/) by [John Crickett](https://substack.com/redirect/04ecef11-081c-44fc-a020-18af823f5950?j=eyJ1IjoiMjE0Z3NlIn0.MMl2Ac4TZlcDfqjPa9oCA3ScgSl5HapC6eRldM-7MHw)
+This repository contains JavaScript attempts on [Weekly Coding Challenges](https://codingchallenges.fyi/) curated by [John Crickett](https://substack.com/redirect/04ecef11-081c-44fc-a020-18af823f5950?j=eyJ1IjoiMjE0Z3NlIn0.MMl2Ac4TZlcDfqjPa9oCA3ScgSl5HapC6eRldM-7MHw). Each challenge involves writing a full application or tool based on real world tools and utilities.
 
 ## Challenges
 
