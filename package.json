@@ -12,7 +12,8 @@
     "ccdecode": "compression_tool/ccdecode.js",
     "cccut": "cut_tool/cut.js",
     "lb": "load_balancer/lb.js",
-    "be": "load_balancer/be.js"
+    "be": "load_balancer/be.js",
+    "ccsort": "sort_tool/sort.js"
   },
   "keywords": [],
   "author": "",

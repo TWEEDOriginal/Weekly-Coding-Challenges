@@ -11,3 +11,4 @@ This repository contains JavaScript attempts on [Weekly Coding Challenges](https
 3. [Build your own compression tool](compression_tool)
 4. [Build your own cut tool](cut_tool)
 5. [Build your own load balancer](load_balancer)
+6. [Build your own sort tool](sort_tool)
