@@ -31,6 +31,9 @@ function quickSort(arr, unique) {
 
 console.log(quickSort([3, 2, 4, 1, 6, 5]));
 console.log(quickSort([6, 5, 4, 3, 2, 1]));
+console.log(quickSort([1, 2, 2, 2, 3, 4, 5, 5, 6]));
+console.log(quickSort([1, 2, 2, 2, 3, 4, 5, 5, 6, 1]));
 
 console.log(quickSort([1, 2, 2, 2, 3, 4, 5, 5, 6], true));
+console.log(quickSort([1, 2, 2, 2, 3, 4, 5, 5, 6, 1], true));
 module.exports = quickSort;

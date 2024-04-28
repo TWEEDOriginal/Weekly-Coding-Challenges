@@ -38,7 +38,7 @@ function heapify(arr, len, parentIndex) {
  * Steps:
  * 1. Build a max-heap.
  * 2. The maximal element is at the root of the tree, switch it with the last element of the tree.
- * 3. Look at the new tree, gotten by ignoring the last position (this is already sorted).  New tree is not a max-heap, heapify it.
+ * 3. New tree is gotten by ignoring the last position (this is already sorted). New tree is not a max-heap, heapify it.
  * 4. Go to step 2 and repeat until tree is empty.
  *
  */
