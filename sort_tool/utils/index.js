@@ -1,3 +1,5 @@
+const { radixSortString: radixSort } = require("./radixSort");
+
 function removeDuplicatesFromSortedArray(arr) {
   let slow = 0;
 
@@ -7,14 +9,28 @@ function removeDuplicatesFromSortedArray(arr) {
       arr[slow] = arr[fast];
     }
   }
-  const lastIndex = arr.length - 1;
   // remove excess
   arr.splice(slow + 1);
 }
 
-removeDuplicatesFromSortedArray([1, 2, 2, 2, 3, 4, 5, 5, 6]);
-removeDuplicatesFromSortedArray([1, 2, 3, 4, 5, 6]);
+function removeDuplicatesFromUnSortedArray(arr) {
+  let set = new Set();
+  let newArray = [];
+
+  for (let word of arr) {
+    if (!set.has(word)) newArray.push(word);
+
+    set.add(word);
+  }
+  return newArray;
+}
 
 module.exports = {
   removeDuplicatesFromSortedArray,
+  removeDuplicatesFromUnSortedArray,
+  heapSort: require("./heapSort"),
+  quickSort: require("./quickSort"),
+  mergeSort: require("./mergeSort"),
+  radixSort,
+  randomSort: require("./randomSort"),
 };

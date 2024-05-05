@@ -64,24 +64,6 @@ function heapSort(arr, heapified) {
   return arr;
 }
 
-console.log(heapSort([3, 2, 4, 1, 6, 5]));
-console.log(heapSort([6, 5, 4, 3, 2, 1]));
-console.log(heapSort([4, 6, 3, 2, 9]));
-
-//simulate readline stream and inserting each line into array
-function heapSortWithInsertion(unOrdered) {
-  const arr = [];
-  for (let elem of unOrdered) {
-    insert(arr, elem);
-  }
-  return heapSort(arr, true);
-}
-
-console.log(heapSortWithInsertion([3, 2, 4, 1, 6, 5]));
-console.log(heapSortWithInsertion([6, 5, 4, 3, 2, 1]));
-console.log(heapSortWithInsertion([4, 6, 3, 2, 9]));
-
-
 module.exports = {
   heapSort,
   insert,

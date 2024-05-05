@@ -1,4 +1,4 @@
-# 1. Build your own compression tool:
+# 3. Build your own compression tool:
 
 ## Description
 

@@ -1,4 +1,4 @@
-# 1. Build Your Own cut Tool:
+# 4. Build Your Own cut Tool:
 
 ## Description
 

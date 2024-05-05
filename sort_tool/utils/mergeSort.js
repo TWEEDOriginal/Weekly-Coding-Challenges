@@ -5,6 +5,13 @@ function skipDuplicate(arr, idx, res, unique) {
   return idx;
 }
 
+function pushDuplicate(arr, idx, res, unique) {
+  // allow duplicates or push unique
+  if (!unique || res[res.length - 1] != arr[idx]) {
+    res.push(arr[idx]);
+  }
+}
+
 function merge(left, right, unique) {
   const res = [];
   let i = 0,
@@ -14,16 +21,10 @@ function merge(left, right, unique) {
 
   while (i < leftLen && j < rightLen) {
     if (left[i] <= right[j]) {
-      // allow duplicates
-      if (!unique || res[res.length - 1] != left[i]) {
-        res.push(left[i]);
-      }
+      pushDuplicate(left, i, res, unique);
       i++;
     } else {
-      // allow duplicates
-      if (!unique || res[res.length - 1] != right[j]) {
-        res.push(right[j]);
-      }
+      pushDuplicate(right, j, res, unique);
       j++;
     }
   }
@@ -53,13 +54,5 @@ function mergeSort(arr, unique) {
 
   return merge(left, right, unique);
 }
-
-console.log(mergeSort([3, 2, 4, 1, 6, 5]));
-console.log(mergeSort([6, 5, 4, 3, 2, 1]));
-console.log(mergeSort([1, 2, 2, 2, 3, 4, 5, 5, 6]));
-console.log(mergeSort([1, 2, 2, 2, 3, 4, 5, 5, 6, 1]));
-
-console.log(mergeSort([1, 2, 2, 2, 3, 4, 5, 5, 6], true));
-console.log(mergeSort([1, 2, 2, 2, 3, 4, 5, 5, 6, 1], true));
 
 module.exports = mergeSort;
