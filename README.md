@@ -12,3 +12,4 @@ This repository contains JavaScript attempts on [Weekly Coding Challenges](https
 4. [Build your own cut tool](cut_tool)
 5. [Build your own load balancer](load_balancer)
 6. [Build your own sort tool](sort_tool)
+7. [Build your own calculator](calculator)

@@ -18,5 +18,8 @@ Command line tool that replicates unix `sort` which is used to sort text files b
 
 Initialize the project with `npm link`
 
-> **_NOTE:_** Removed duplicates whilst sorting for merge and quick sort because it doesn't require any extra computational complexity. Used 2 pointer approach for removing duplicates after sorting. 
+```bash
+>ccsort <option(s)> <file>
+```
 
+> **_NOTE:_** Removed duplicates whilst sorting for merge and quick sort because it doesn't require any extra computational complexity. Used 2 pointer approach for removing duplicates after sorting.

@@ -13,7 +13,8 @@
     "cccut": "cut_tool/cut.js",
     "lb": "load_balancer/lb.js",
     "be": "load_balancer/be.js",
-    "ccsort": "sort_tool/sort.js"
+    "ccsort": "sort_tool/sort.js",
+    "calc": "calculator/calculator.js"
   },
   "keywords": [],
   "author": "",
