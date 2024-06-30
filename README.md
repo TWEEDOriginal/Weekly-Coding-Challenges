@@ -6,10 +6,11 @@ This repository contains JavaScript attempts on [Weekly Coding Challenges](https
 
 ## Challenges
 
-1. [Build your own wc tool](ccwc)
-2. [Build your own JSON parser](json_parser)
-3. [Build your own compression tool](compression_tool)
-4. [Build your own cut tool](cut_tool)
-5. [Build your own load balancer](load_balancer)
-6. [Build your own sort tool](sort_tool)
-7. [Build your own calculator](calculator)
+1. [Build your own wc tool](src/ccwc)
+2. [Build your own JSON parser](src/json_parser)
+3. [Build your own compression tool](src/compression_tool)
+4. [Build your own cut tool](src/cut_tool)
+5. [Build your own load balancer](src/load_balancer)
+6. [Build your own sort tool](src/sort_tool)
+7. [Build your own calculator](src/calculator)
+8. [Build your own redis server](src/redis_server)

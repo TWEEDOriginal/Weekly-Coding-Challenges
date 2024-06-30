@@ -4,19 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "bin": {
-    "ccwc": "ccwc/ccwc.js",
-    "ccencode": "compression_tool/ccencode.js",
-    "ccdecode": "compression_tool/ccdecode.js",
-    "cccut": "cut_tool/cut.js",
-    "lb": "load_balancer/lb.js",
-    "be": "load_balancer/be.js",
-    "ccsort": "sort_tool/sort.js",
-    "calc": "calculator/calculator.js"
+    "ccwc": "src/ccwc/ccwc.js",
+    "ccencode": "src/compression_tool/ccencode.js",
+    "ccdecode": "src/compression_tool/ccdecode.js",
+    "cccut": "src/cut_tool/cut.js",
+    "lb": "src/load_balancer/lb.js",
+    "be": "src/load_balancer/be.js",
+    "ccsort": "src/sort_tool/sort.js",
+    "calc": "src/calculator/calculator.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
 }
