@@ -14,7 +14,8 @@
     "lb": "src/load_balancer/lb.js",
     "be": "src/load_balancer/be.js",
     "ccsort": "src/sort_tool/sort.js",
-    "calc": "src/calculator/calculator.js"
+    "calc": "src/calculator/calculator.js",
+    "ccredis-server": "src/redis_server/server.js"
   },
   "keywords": [],
   "author": "",
